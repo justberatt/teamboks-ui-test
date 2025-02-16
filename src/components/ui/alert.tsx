@@ -10,8 +10,8 @@ const alertVariants = cva(
       type: {
         success: "bg-green-50 text-green-900 border-green-400",
         error: "bg-red-50 text-red-900 border-red-400",
-        warning: "bg-yellow-50 text-yellow-900 border-yellow-400",
-        info: "bg-blue-50 text-blue-900 border-blue-400",
+        warning: "bg-orange-50 text-orange-900 border-orange-400",
+        info: "bg-blue-50 text-grey-900 border-grey-400",
       },
       variant: {
         subtle: "bg-opacity-50",
@@ -36,7 +36,7 @@ interface AlertProps extends React.HTMLAttributes<HTMLDivElement> {
 }
 
 const Alert = ({
-  type = "success",
+  type = "info",
   variant = "subtle",
   title,
   description,

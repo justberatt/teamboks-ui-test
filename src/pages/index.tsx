@@ -4,24 +4,22 @@ import { InfoIcon } from "lucide-react";
 export default function Home() {
   return (
     <>
+      <Alert type="success">Operation completed</Alert>  
+
       <Alert  
-        type="success"  
-        variant="subtle"
-        description='Success, I like it'
-        onClose={() => {}}> 
-      </Alert>
-      <Alert  
-        type="error"  
-        variant="outlined"
-        description='Success, I like it'
-        onClose={() => {}}> 
-      </Alert>
-      <Alert
-        type="info"
-        title="Did You Know?"
-        description="This is an informational alert."
-        icon={<InfoIcon className="w-5 h-5 text-blue-500" />} // Blue for info
+        type="warning"  
+        title="Update Available"  
+        description="A new version is ready to install."  
       />
+
+      <Alert  
+        type="info"  
+        variant="subtle"  
+        icon={<InfoIcon />}
+        onClose={() => {}}  
+      >  
+        Custom content here  
+      </Alert>
     </>
   );
 }
