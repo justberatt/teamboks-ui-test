@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from '@storybook/react';
 import { Alert } from './alert';
-import { XCircleIcon } from 'lucide-react'; // or any other icon you prefer
+import { InfoIcon } from "lucide-react";
 
 const meta: Meta<typeof Alert> = {
   title: 'Components/Alert',
@@ -57,7 +57,7 @@ export const WithIconAndClose: Story = {
     variant: 'solid',
     title: 'Information',
     description: 'This is an informational alert.',
-    icon: <XCircleIcon className="w-5 h-5" />,
+    icon: <InfoIcon className="w-5 h-5" />,
     onClose: () => alert('Alert closed!'),
   },
 };
